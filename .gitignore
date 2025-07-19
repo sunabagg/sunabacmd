@@ -1,0 +1,7 @@
+build.js
+*.sbx
+/template/bin/*
+/template/lib/*
+/bin/*
+SunabaPlayerSetup.exe
+.debian/*
