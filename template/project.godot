@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="sunabacmd"
+run/main_scene="uid://cpumc5a8inr52"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+
+[display]
+
+window/subwindows/embed_subwindows=false
+display_server/driver.windows="headless"
+display_server/driver.linuxbsd="headless"
+display_server/driver.macos="headless"
+
+[dotnet]
+
+project/assembly_name="Sunaba"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/sbx_exporter/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
